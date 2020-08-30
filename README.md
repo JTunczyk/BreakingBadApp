@@ -1,5 +1,7 @@
 # BreakingBadApp
-Aplikacja stworzona na potrzeby rekrutacji do Web Falcon
+Aplikacja stworzona na potrzeby rekrutacji do Web Falcon. (Strona jest w pełni responsywna)
+
+Żeby aplikacja poprawnie działała, należy zrobić migracje tabeli ocena_aktora oraz utworz_konta.
 
 ## Przetestowane na przeglądarkach: 
 Edge 85
@@ -11,8 +13,3 @@ Opera 70
 Firefox 79
 
 Internet Explorer 11
-
-## !!!
-
-Żeby aplikacja poprawnie działała, należy zrobić migracje tabeli ocena_aktora oraz utworz_konta.
-Strona jest w pełni responsywna
