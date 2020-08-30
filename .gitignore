@@ -4,7 +4,7 @@
 /storage/*.key
 /vendor/*
 !/vendor/guzzlehttp/
-!*/vendor/autoload.php
+!/vendor/autoload.php
 .env
 .env.backup
 .phpunit.result.cache
