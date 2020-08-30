@@ -2,7 +2,6 @@ with_vendors/node_modules
 with_vendors/public/hot
 with_vendors/public/storage
 with_vendors/storage/*.key
-with_vendors/.env
 with_vendors/.env.backup
 with_vendors/.phpunit.result.cache
 with_vendors/Homestead.json
@@ -13,7 +12,6 @@ no_vendors/node_modules
 no_vendors/public/hot
 no_vendors/public/storage
 no_vendors/storage/*.key
-no_vendors/.env
 no_vendors/.env.backup
 no_vendors/.phpunit.result.cache
 no_vendors/Homestead.json
