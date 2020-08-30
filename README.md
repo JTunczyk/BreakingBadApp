@@ -12,7 +12,7 @@ Strona posiada system oceniania w postaci serduszek oraz posiada system rejestra
 
 Użytkownik posiada możliwość wyświetlenia poprzednio ocenionych postaci.
 
-W przypadku checia ustawienia wlasnego pliku .env oraz posiadania vendorów z archiwum .zip należy wypakować folder "no_vendors".
+W przypadku chęci ustawienia wlasnego pliku .env oraz posiadania vendorów z archiwum .zip należy wypakować folder "no_vendors".
 
 Jeśli baza danych znajduje się na serwerze lokalnym (np. XAMPP) oraz potrzebne są vendory wypakować "with_vendors".
 
