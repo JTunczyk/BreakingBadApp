@@ -12,6 +12,7 @@ no_vendors/node_modules
 no_vendors/public/hot
 no_vendors/public/storage
 no_vendors/storage/*.key
+no_vendors/.env
 no_vendors/.env.backup
 no_vendors/.phpunit.result.cache
 no_vendors/Homestead.json
