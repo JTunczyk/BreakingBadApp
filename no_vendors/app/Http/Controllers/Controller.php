@@ -14,8 +14,8 @@ class Controller extends BaseController
 
     static function connect($a = "all") //funkcja do laczenia sie z api, uzywana w paru kontrolerach wiec zdeklarowana tutaj
     {
-        $client = new Client();
-        while (!isset($response)) { //probowanie poki sie nie uda
+        while (!isset($x[0])) { //probowanie poki sie nie uda
+            $client = new Client();
             if ($a == "random") {
                 $response = $client->request('GET', 'https://www.breakingbadapi.com/api/characters/'.strval(rand(1, 63)), ['verify' => false]); // verify jest ustawione na false bo robilem to lokalnie
             } else if ($a == "all") {
@@ -24,7 +24,8 @@ class Controller extends BaseController
                 return null;
             }
             $statusCode = $response->getStatusCode();
-            return json_decode($response->getBody()->getContents(), true); // zamiana stringa na array
+            $x = json_decode($response->getBody()->getContents(), true); // zamiana stringa na array
         }
+        return $x;
     }
 }
