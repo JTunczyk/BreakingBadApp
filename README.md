@@ -16,6 +16,8 @@ W przypadku chęci ustawienia wlasnego pliku .env oraz posiadania vendorów z ar
 
 Jeśli baza danych znajduje się na serwerze lokalnym (np. XAMPP) oraz potrzebne są vendory wypakować "with_vendors".
 
+AUTOR: JAKUB KORYTKO.
+
 ## Przetestowane na przeglądarkach: 
 Edge 85
 
