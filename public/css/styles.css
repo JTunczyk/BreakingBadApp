@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+.box {
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    background: -o-radial-gradient(circle, rgba(28, 45, 3, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(28, 45, 3, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+h2 {
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: lato;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4vw;
+    -webkit-animation: 1s appear forwards;
+            animation: 1s appear forwards;
+}
+
+.tip {
+    font-size: 1vw;
+    color: white;
+    display: block;
+    margin-bottom: -4%;
+}
+
+.blad {
+    margin-top: -4%;
+    margin-bottom: 2%;
+    display: none;
+    color: red;
+    font-size: 1vw;
+}
+
+#back {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 5vw;
+    min-height: 5vw;
+    background-color: white;
+    background-image: url('/images/back.png');
+    background-size: cover;
+    border-radius: 0 0 25% 0;
+    z-index: 2;
+    -webkit-animation: 1s appear forwards;
+            animation: 1s appear forwards;
+}
+
+#back:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.sympatiabox {
+    border: 0.85vw solid white;
+    padding: 15px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.sympatiabox:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+.box div {
+    height: 60px;
+    width: 60px;
+    left: -1vw;
+    position: absolute;
+    top: 10%;
+    -webkit-animation: animate 4s linear infinite;
+            animation: animate 4s linear infinite;
+    background-image: url('/images/photo.png');
+    background-size: cover;
+    border-radius: 15px;
+}
+
+@-webkit-keyframes animate {
+    0% {
+        -webkit-transform: scale(0) translateX(0) rotate(50deg);
+                transform: scale(0) translateX(0) rotate(50deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1.6) translateX(+100vw) rotate(360deg);
+                transform: scale(1.6) translateX(+100vw) rotate(360deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        -webkit-transform: scale(0) translateX(0) rotate(50deg);
+                transform: scale(0) translateX(0) rotate(50deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1.6) translateX(+100vw) rotate(360deg);
+                transform: scale(1.6) translateX(+100vw) rotate(360deg);
+    }
+}
+
+@-webkit-keyframes appear {
+    0% {
+        pointer-events: none;
+        opacity: 0;
+        -webkit-filter: blur(10px);
+                filter: blur(10px);
+    }
+
+    100% {
+        pointer-events: initial;
+        opacity: 1;
+        -webkit-filter: none;
+                filter: none;
+    }
+}
+
+@keyframes appear {
+    0% {
+        pointer-events: none;
+        opacity: 0;
+        -webkit-filter: blur(10px);
+                filter: blur(10px);
+    }
+
+    100% {
+        pointer-events: initial;
+        opacity: 1;
+        -webkit-filter: none;
+                filter: none;
+    }
+}
+
+#logtext {
+    margin-bottom: 5%;
+    width: 20vw;
+    line-height: 1.8vw;
+    text-align: center;
+}
+
+#logpass {
+    width: 16vw;
+    line-height: 1.5vw;
+    text-align: center;
+}
+
+#logbutt {
+    text-transform: none;
+    margin-bottom: 10%;
+    width: 10vw;
+    height: 1.5vw;
+    cursor: pointer;
+}
+
+#lognoacc {
+    font-size: 1vw;
+}
+
+#logerr {
+    margin-bottom: -2%;
+    color: red;
+    font-size: 1vw;
+    letter-spacing: 0.2vw;
+}
+
+#searchtext {
+    line-height: 4vh;
+    width: 40vw;
+    margin-right: 2vw;
+    vertical-align: 0.8vw;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#lupa {
+    cursor: pointer;
+    width: 6%;
+    height: 12%;
+    border-radius: 25%;
+    background-color: white;
+}
+
+#profilimg {
+    width: 40%;
+}
+
+#qwerty {
+        font-size: 1vw;
+    }
+
+@media only screen and (max-width: 800px) {
+    /* jest tu mnostwo important z powodu ze ten arkusz jest wczytywany przed wewnetrznym kazdej podstrony (zostalby zastapiony) */
+    #qwerty {
+        font-size: 3vw !important;
+    }
+
+    #back {
+        min-width: 10vw !important;
+        min-height: 10vw !important;
+    }
+
+    #profilimg {
+        width: 80% !important;
+    }
+
+    h2 {
+        font-size: 13vw !important;
+    }
+
+    .tip {
+        font-size: 3vw !important;
+        margin-bottom: 4% !important;
+    }
+
+    .blad {
+        font-size: 3vw !important;
+    }
+
+    #logtext {
+        margin-bottom: 5%!important; 
+        width: 40vw!important;
+        line-height: 4vw!important;
+    }
+
+    #logpass {
+        width: 32vw!important;
+        line-height: 4vw!important;
+    }
+
+    .regpass {
+        width: 32vw!important;
+        line-height: 4vw!important;
+    }
+
+    #logerr {
+        margin-bottom: 5%!important;
+        margin-top: 2vw!important;
+        font-size: 3vw!important;
+    }
+
+    #logbutt {
+        margin-bottom: 10%!important;
+        margin-top: 3vw!important;
+        width: 20vw!important;
+        font-size: 3vw!important;
+        height: 6vw!important;
+    }
+
+    #regbutt {
+        margin-bottom: 10%!important;
+        width: 20vw!important;
+        font-size: 2.5vw!important;
+        height: 6vw!important;
+    }
+
+    #lognoacc {
+        font-size: 3vw!important;
+    }
+
+    #lupa {
+        width: unset!important;
+        height: 12vw!important;
+        margin-top: 4vw!important;
+    }
+
+    #searchtext {
+        font-size: 4vw!important;
+    }
+
+    #confirm, #inUse {
+        font-size: 3vw!important;
+    }
+
+
+}
